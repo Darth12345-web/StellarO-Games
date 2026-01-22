@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mega Game Site — Glass Edition</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="apple-glass-container" id="glass-container">
+        <nav class="tabs">
+            <button class="tab active" data-tab="home">🏠 Home</button>
+            <button class="tab" data-tab="about">💡 About</button>
+            <button class="tab" data-tab="contact">✉️ Contact</button>
+        </nav>
+        <section id="tab-content">
+            <div class="tab-panel" id="home" style="display:block;">
+                <h1>Welcome to <span class="gradient-text">Mega Game Site!</span></h1>
+                <p class="message-text">✨ Dive into a next-gen gaming experience ✨</p>
+                <ul class="feature-list">
+                    <li>⚡ Apple-style glassmorphic UI</li>
+                    <li>🔆 Resize window with live animation</li>
+                    <li>🖱️ Responsive to your mouse movement</li>
+                    <li>🎨 Ready for custom games in <strong>/games</strong></li>
+                </ul>
+                <img src="https://assets-global.website-files.com/5fa1d2f04d291062ceafc9c6/61c09509959ab5581cc0e6fa_glass-apple.png" alt="Apple Glass UI Demo" class="demo-img">
+            </div>
+            <div class="tab-panel" id="about">
+                <h1>About Our Site</h1>
+                <p><strong>Mega Game Site</strong> combines stunning visuals with fun and community. Here’s what to expect:</p>
+                <div class="about-cards">
+                    <div class="glass-card">
+                        <h3>🌈 Glassmorphism</h3>
+                        <p>Inspired by Apple’s latest designs, every element floats with soft blur, shadow, and vibrant color.</p>
+                    </div>
+                    <div class="glass-card">
+                        <h3>⚙️ Super Interactive</h3>
+                        <p>Experience vivid responsiveness with cursor-based highlights and fluid resizing animations.</p>
+                    </div>
+                </div>
+                <div class="showcase">
+                    <span class="showcase-glow"></span>
+                    <span class="showcase-orb"></span>
+                </div>
+            </div>
+            <div class="tab-panel" id="contact">
+                <h1>Contact Us</h1>
+                <form class="contact-form">
+                    <label>Name: <input type="text" name="name" required placeholder="Enter your name"></label>
+                    <label>Email: <input type="email" name="email" required placeholder="Email"></label>
+                    <label>Message: <textarea name="msg" rows="4" placeholder="Say hi!"></textarea></label>
+                    <button type="submit">Send</button>
+                </form>
+                <div class="social">
+                    <a href="#" class="icon-btn"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/twitter.svg" alt="Twitter"></a>
+                    <a href="#" class="icon-btn"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/discord.svg" alt="Discord"></a>
+                </div>
+            </div>
+        </section>
+        <div class="resize-handle"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
